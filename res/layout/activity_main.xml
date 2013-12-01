@@ -1,0 +1,177 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".PIDNetActivity" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/black_overlay"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+                  <TextView
+        android:id="@+id/tv_display_mycurrentlongLat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Latitude and Longitude"
+         />
+                 <TextView
+        android:id="@+id/txtLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+    
+                 <TextView
+        android:id="@+id/txtLon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+                              
+                 <TextView
+        android:id="@+id/tv_counter1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Counter 1: "
+         />  
+    
+    <Button
+        android:id="@+id/bt_startwp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Waypoint" />
+
+    <TextView
+        android:id="@+id/tv_startwp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         />
+    
+    <Button
+        android:id="@+id/bt_endwp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="End Waypoint" />
+    
+    <TextView
+        android:id="@+id/tv_endwp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         />
+    
+
+    <Button
+        android:id="@+id/bt_myLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start PID" />
+
+        <TextView
+            android:id="@+id/tv_display_distance_from_end_wp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Distance From End Waypoint" />
+    
+        <TextView
+        android:id="@+id/tv_distance_from_end_wp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         />
+    
+    <TextView
+        android:id="@+id/tv_display_desiredCourse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Desired Course"
+         />
+    
+        <TextView
+        android:id="@+id/tv_desiredCourse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         />
+        
+        <TextView
+        android:id="@+id/tv_display_currentCourse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Current GPS Course"
+         />
+        
+ 
+            
+            <TextView
+        android:id="@+id/tv_currentCourse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         />
+            
+            <TextView
+        android:id="@+id/tv_display_currentCompCourse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Comp Course"
+         />
+            
+            <TextView
+        android:id="@+id/tv_currentCompCourse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         />
+            
+       <TextView
+        android:id="@+id/tv_display_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Cross Track Error"
+         />     
+            
+             <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         />
+             
+                    <TextView
+        android:id="@+id/tv_display_pidHeading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="PID Heading"
+         />   
+             
+             <TextView
+        android:id="@+id/tv_pidHeading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         />
+
+     <TextView
+        android:id="@+id/tv_counter2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Counter 2: "
+         /> 
+             
+             <Button
+        android:id="@+id/bt_stop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Manual Stop" />
+        </LinearLayout>
+</FrameLayout>
